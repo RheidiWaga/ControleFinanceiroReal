@@ -30,8 +30,11 @@ public class Exercicio1Controller {
         return new StringBuilder(nome).reverse().toString();
     }
 
+<<<<<<< HEAD
     //@RequestBody = anotacao defini que irei passar parametro no corpo da requisicao
     //Só consigo passar no corpo da requisição se utilizar verbo POST (@PostMapping)
+=======
+>>>>>>> 74f12d403eed46b659e738f4d1fb492666e717f7
     @PostMapping("/reverter-nome-requisicao-corpo")
     String reverterNomeRequisicaoCorpo(@RequestBody String nome) {
         return new StringBuilder(nome).reverse().toString();
@@ -85,6 +88,7 @@ public class Exercicio1Controller {
         }
     }
 
+<<<<<<< HEAD
     public static class User {
         private String name;
         private int age;
@@ -115,6 +119,34 @@ public class Exercicio1Controller {
     public String registerUser(@RequestBody User user) {
         return "Bem-vindo, " + user.getName() + "! Você tem " + user.getAge() + " anos.";
     }
+=======
+    @PostMapping("/create-user")
+    public String createUser(@RequestBody User user) {    
+        return "olá, "+user.getNome() + "voce tem"+user.getIdade()+" anos. ";
+    }
+    
 
+    public class User {
+        private String nome;
+        private Integer idade;
+
+        public User(){
+        }
+>>>>>>> 74f12d403eed46b659e738f4d1fb492666e717f7
+
+        public String getNome() {
+            return nome;
+        }
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+
+        public Integer getIdade() {
+            return idade;
+        }
+        public void setIdade(Integer idade) {
+            this.idade = idade;
+        }
+    }
 }
 
