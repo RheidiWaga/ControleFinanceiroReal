@@ -115,9 +115,6 @@ public class Exercicio1Controller {
     public String registerUser(@RequestBody User user) {
         return "Bem-vindo, " + user.getName() + "! Você tem " + user.getAge() + " anos.";
     }
-   
-    
 
-    
 }
 

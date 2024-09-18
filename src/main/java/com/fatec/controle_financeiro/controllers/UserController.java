@@ -1,6 +1,3 @@
-package com.fatec.controle_financeiro.entities;
-
-
 public class User {
     private int id;
 
@@ -43,5 +40,4 @@ public class User {
     public void setAge(int age) {
         this.age = age;
     }
-
 }
